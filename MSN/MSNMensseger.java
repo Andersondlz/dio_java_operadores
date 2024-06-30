@@ -1,16 +1,8 @@
-public class MSNMensseger {
- public void enviarMensagem(){
-    validarConectadoInterner();
-    System.out.println("Enviando Mensagem");
-    salvarHistoricoMensagem();
- }
- public void receberMensagem(){
-    System.out.println("Recebendo Mensagem");
- }
- private void validarConectadoInterner(){
-    System.out.println("Validando se esta conectado a internet");
- }
- private void salvarHistoricoMensagem(){
-    System.out.println("Salvando o histórico da mensagem enviada");
- }
+public class MSNMensseger  extends ServicodeMensagemInstantania{
+    public void enviarMensagem(){
+        System.out.println("Enviando Mensagem pelo MSN Mensseger");
+    }
+    public void receberMensagem(){
+       System.out.println("Rebebendo mensagem pelo MSN Menseger");
+    }
 }
